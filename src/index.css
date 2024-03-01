@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root,
+html,
+body{
+    width: 100vw;
+    height: 100vh
+}
+
+main{
+    @apply bg-gradient-to-b from-sky-500 to-green-300 h-full flex items-center justify-center
+}
+
+.pokedex_container{
+    @apply inline-block relative
+}
+
+.pokedex{
+    @apply w-full max-w-[425px]
+}
+
+.input{
+    box-shadow: -3px 3px 0 #6b7280, -5px 5px 0 #000;
+    @apply absolute h-10 p-2 rounded-md top-[65%] right-[20%] outline-none font-[600] border-2 border-zinc-900 bg-gray-200 text-neutral-700
+}
+
+.pokemon_display{
+    @apply absolute top-[55%] right-[25%] font-[600] text-lg
+}
+
+.type_display{
+    box-shadow: -1px 1px 0 #0a0a0a;
+    @apply absolute top-[15%] right-[20%] bg-gray-400 px-2 py-1 rounded-md text-sm border-2 border-gray-500 text-gray-800 font-[500]
+}
+
+nav{
+    @apply absolute bottom-[10%] left-[15%] gap-6 flex
+}
+
+.button_nav{
+    box-shadow: -3px 3px 0 #0a0a0a;
+    @apply bottom-[10%] text-lg bg-zinc-600 px-4 py-2 rounded-md font-bold text-gray-200 border-2 border-zinc-900
+}
+
+.button_nav:active{
+    box-shadow: inset -3px 3px 0 #0a0a0a;
+    font-size: 1rem;
+}
+
+.pokemon_image{
+    @apply absolute top-[30%] left-[35%] w-32
+}
